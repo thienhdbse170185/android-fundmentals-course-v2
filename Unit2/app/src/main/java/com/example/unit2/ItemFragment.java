@@ -85,7 +85,7 @@ public class ItemFragment extends Fragment {
     private void showAddItemDialog() {
         // Create an EditText view to get user input
         final EditText input = new EditText(requireContext());
-        input.setHint("Enter item name");
+        input.setHint("Enter product name");
 
         // Create and show the AlertDialog
         new AlertDialog.Builder(requireContext())

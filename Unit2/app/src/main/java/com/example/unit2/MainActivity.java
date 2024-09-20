@@ -50,6 +50,10 @@ public class MainActivity extends AppCompatActivity {
                 navController.navigate(R.id.itemFragment);
             } else if (id == R.id.nav_settings) {
                 navController.navigate(R.id.mapsFragment);
+            } else if (id == R.id.nav_bmi_calculator) {
+                navController.navigate(R.id.BMICalculatorFragment);
+            } else if (id == R.id.nav_health_check_timer) {
+                navController.navigate(R.id.healthCheckTimerFragment);
             }
 
             drawerLayout.closeDrawer(GravityCompat.START);  // Close the drawer

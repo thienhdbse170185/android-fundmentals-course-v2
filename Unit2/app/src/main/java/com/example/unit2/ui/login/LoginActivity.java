@@ -31,7 +31,6 @@ import com.example.unit2.ui.login.LoginViewModelFactory;
 import com.example.unit2.databinding.ActivityLoginBinding;
 
 public class LoginActivity extends AppCompatActivity {
-
     private LoginViewModel loginViewModel;
     private ActivityLoginBinding binding;
 
@@ -49,10 +48,10 @@ public class LoginActivity extends AppCompatActivity {
         final EditText passwordEditText = binding.password;
         final Button loginButton = binding.login;
         final ProgressBar loadingProgressBar = binding.loading;
-        final ImageView clickableImage = binding.clickableImage;
+        final ImageView imageView = binding.clickableImage;
 
-        clickableImage.setOnClickListener(v -> {
-            Toast.makeText(LoginActivity.this, "Image clicked!", Toast.LENGTH_SHORT).show();
+        imageView.setOnClickListener(v -> {
+            Toast.makeText(this, "Image is clicked!", Toast.LENGTH_SHORT).show();
         });
 
         loginViewModel.getLoginFormState().observe(this, new Observer<LoginFormState>() {

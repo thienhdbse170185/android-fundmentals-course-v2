@@ -14,4 +14,14 @@
         android:name="com.example.unit2.MapsFragment"
         android:label="Google Map"
         tools:layout="@layout/fragment_maps" />
+    <fragment
+        android:id="@+id/BMICalculatorFragment"
+        android:name="com.example.unit2.BMICalculatorFragment"
+        android:label="BMI Calculator"
+        tools:layout="@layout/fragment_bmi_calculator" />
+    <fragment
+        android:id="@+id/healthCheckTimerFragment"
+        android:name="com.example.unit2.HealthCheckTimerFragment"
+        android:label="Health Check Timer"
+        tools:layout="@layout/fragment_health_check_timer" />
 </navigation>

@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="colorWeak">#FF0000</color> <!-- Red for Weak -->
+    <color name="colorAverage">#FFFF00</color> <!-- Yellow for Average -->
+    <color name="colorGood">#00FF00</color> <!-- Green for Good -->
+    <color name="colorVeryGood">#0000FF</color> <!-- Blue for Very Good -->
 </resources>
