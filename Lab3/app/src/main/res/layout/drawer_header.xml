@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp">
+
+    <!-- Phần thông tin người dùng -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/logo_fap" />
+
+        <!-- Tên người dùng -->
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hoàng Đặng Bảo Thiên"
+            android:textSize="24sp"
+            android:textColor="@android:color/primary_text_light"
+            android:layout_marginTop="16dp" />
+
+        <!-- Email hoặc username -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="thienhdbse170185"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_purple"
+            android:layout_marginTop="10dp" />
+
+        <!-- Balance -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balance: 0.0 VND"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_purple"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+    <!-- Nút logout nằm ở cuối màn hình -->
+    <LinearLayout
+        android:id="@+id/logout_button_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="10dp"
+        android:background="@drawable/logout_button_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginTop="30dp">
+
+        <!-- Icon logout -->
+        <ImageView
+            android:id="@+id/logout_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_logout" />
+
+        <!-- Text logout -->
+        <TextView
+            android:id="@+id/logout_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textColor="@android:color/primary_text_light"
+            android:textSize="18sp"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
